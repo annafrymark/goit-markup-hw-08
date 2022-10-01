@@ -2,23 +2,30 @@
   margin: 0;
   padding: 0;
 }
+
 .section-main {
   background-color: $brand-color-first;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 600px;
+  min-height: 400px;
   background-image: linear-gradient(
       0deg,
       rgba(47, 48, 58, 0.4) 0%,
       rgba(47, 48, 58, 0.4) 100%
     ),
-    url("../images/Img18.jpg");
-  background-size: auto;
+    url("../images/HeaderMobile@1x.jpg");
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  min-width: 320px;
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__header {
     font-weight: 900;
@@ -28,5 +35,75 @@
     text-align: center;
     margin: 0;
     padding: 0;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-main {
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/HeaderMobile@2x.jpg");
+    // tu background 2x
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  // .mobile-menu{display:none;}
+  .section-main {
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/HeaderTablet@1x.jpg");
+    // tu background 2x
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  // .mobile-menu{display:none;}
+  .section-main {
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/HeaderTablet@2x.jpg");
+    // tu background 2x
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) {
+  // .mobile-menu{display:none;}
+  .section-main {
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/HeaderDesktop@1x.jpg");
+    // tu background 2x
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  // .mobile-menu{display:none;}
+  .section-main {
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/HeaderDesktop@2x.jpg");
+    // tu background 2x
+    background-size: cover;
   }
 }
