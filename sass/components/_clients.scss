@@ -1,0 +1,32 @@
+.clients {
+  display: flex;
+  gap: 30px;
+
+  &__logo {
+    border: solid 1px #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px 16px 32px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, border-color;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:focus-within svg,
+    &:hover svg {
+      fill: $brand-color-second;
+      border-color: $brand-color-second;
+    }
+
+    &:focus .clients__logo,
+    &:hover .clients__logo {
+      fill: $brand-color-second;
+    }
+  }
+}

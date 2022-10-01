@@ -1,0 +1,92 @@
+img {
+  display: block;
+}
+.project {
+  padding-top: 0;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 1170px;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item > figure {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  &__container {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &:hover .overlay {
+      transform: translateY(0);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+  }
+  .overlay > p {
+    color: $brand-color-third;
+    padding: 49px 45px 49px 24px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  figcaption {
+    border: 1px solid #eeeeee;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: $brand-color-first;
+    padding: 20px 0 0 24px;
+    margin: 0;
+  }
+  &__type {
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.88;
+    color: $brand-color-fourth;
+    padding: 0 0 20px 24px;
+    margin: 0;
+  }
+  &__item {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow;
+
+    &:focus,
+    &:hover {
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      cursor: pointer;
+    }
+  }
+}
