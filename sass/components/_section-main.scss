@@ -29,12 +29,14 @@
 
   &__header {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.6;
     color: $brand-color-third;
     text-align: center;
+    align-items: center;
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
   }
 }
 @media (min-device-pixel-ratio: 2),
@@ -60,7 +62,11 @@
         rgba(47, 48, 58, 0.4) 100%
       ),
       url("../images/HeaderTablet@1x.jpg");
-        background-size: cover;
+    background-size: cover;
+  }
+  &__header {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
@@ -73,7 +79,7 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%
       ),
-      url("../images/HeaderTablet@2x.jpg");   
+      url("../images/HeaderTablet@2x.jpg");
     background-size: cover;
   }
 }
@@ -85,8 +91,12 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%
       ),
-      url("../images/HeaderDesktop@1x.jpg");   
+      url("../images/HeaderDesktop@1x.jpg");
     background-size: cover;
+  }
+    &__header {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -99,7 +109,7 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%
       ),
-      url("../images/HeaderDesktop@2x.jpg");   
+      url("../images/HeaderDesktop@2x.jpg");
     background-size: cover;
   }
 }

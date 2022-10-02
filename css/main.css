@@ -23,7 +23,6 @@ img {
 
 .container {
   width: 100%;
-  min-width: 340px;
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -161,7 +160,7 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -325,10 +324,12 @@ a {
 }
 
 .article {
+  padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -398,6 +399,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 25px 190px 25px 190px;
+  height: 120px;
+  max-width: 450px;
 }
 .article__title {
   color: #2f303a;
