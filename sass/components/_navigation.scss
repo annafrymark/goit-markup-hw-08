@@ -1,12 +1,15 @@
 a {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 .navigation {
   display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -14,10 +17,14 @@ a {
   }
 
   .navigation {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
     &__list {
       display: flex;
       flex-direction: row;
-      margin: 32px 0px 32px 0px;
+
+      //   margin: 32px 0px 32px 0px;
     }
 
     &__link {
@@ -54,3 +61,17 @@ a {
     }
   }
 }
+
+// @media screen and (min-width: 1200px) {
+//   .mobile-menu {
+//     display: none;
+//   }
+//   .navigation {
+//     display: flex;
+
+//     &__list {
+//       display: flex;
+//       flex-direction: row;
+//     }
+//   }
+// }
