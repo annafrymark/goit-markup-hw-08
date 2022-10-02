@@ -1,9 +1,9 @@
- $brand-color-first: #2f303a;
-  $brand-color-second: #2196f3;
-  $brand-color-third: #ffffff;
-  $brand-color-fourth: #757575;
+$brand-color-first: #2f303a;
+$brand-color-second: #2196f3;
+$brand-color-third: #ffffff;
+$brand-color-fourth: #757575;
 
-  body {
+body {
   font-family: "Roboto", "Raleway", Verdana, Tahoma, sans-serif;
   color: #212121;
 }
@@ -11,4 +11,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  margin: auto;
+  display: block;
 }
