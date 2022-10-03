@@ -1,6 +1,19 @@
+.container--clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section__header--clients{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  }
+
 .clients {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  
 
   &__logo {
     border: solid 1px #afb1b8;
@@ -15,8 +28,14 @@
   }
   &__item {
     display: flex;
-    align-items: center;
-    justify-content: center;
+     flex-basis: calc((100% - 1 * 30px) / 2);
+     width: 210px;
+     height: 92px;
+     margin: 0;
+     padding: 0;
+     
+    // align-items: center;
+    // justify-content: center;
 
     &:focus-within svg,
     &:hover svg {
@@ -29,4 +48,18 @@
       fill: $brand-color-second;
     }
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__item {
+     flex-basis: calc((100% - 2 * 30px) / 3);}
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    display: flex;
+    flex-direction: row;
+  }
+  .clients__item {
+     flex-basis: calc((100% - 5 * 30px) / 6);}
 }
