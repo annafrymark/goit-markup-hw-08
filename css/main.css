@@ -23,6 +23,7 @@ img {
 
 .container {
   width: 100%;
+  min-width: 340px;
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -493,9 +494,23 @@ a {
     margin: 0;
   }
 }
+.section__header--team {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .team {
   background-color: #f5f4fa;
-  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 .team__list {
   display: -webkit-box;
@@ -508,7 +523,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 1170px;
 }
 .team__item {
   display: -webkit-box;
@@ -517,9 +531,13 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  padding-bottom: 30px;
 }
 .team__photo {
   display: block;
+  width: 100%;
+  height: auto;
 }
 .team__member {
   font-size: 16px;
@@ -542,6 +560,8 @@ a {
   color: #2f303a;
   font-weight: 500;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .team__position {
   color: #757575;
@@ -557,7 +577,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 16px 32px 30px 32px;
+  margin: 16px 32px 24px 32px;
   gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -623,6 +643,30 @@ a {
   transition-property: fill, background-color;
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    gap: 30px;
+  }
+  .team__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
+}
 .clients {
   display: -webkit-box;
   display: -ms-flexbox;
