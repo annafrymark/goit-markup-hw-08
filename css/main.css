@@ -1179,18 +1179,41 @@ label[for=sign-up] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer {
+  .footer__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
+  }
+  .footer__studio {
+    margin-top: 60;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__header {
+    margin-left: 70px;
+    margin-top: 72px;
+  }
+  .footer__social-icons {
+    margin-left: 70px;
   }
   .footer__sign-up {
     display: -webkit-box;
@@ -1205,6 +1228,13 @@ label[for=sign-up] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 72px;
+  }
+  .footer__email-input {
+    max-width: 358px;
+  }
+  .btn--signup {
+    margin-bottom: 94px;
   }
 }
 /* BACKDROP */
