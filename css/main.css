@@ -1179,6 +1179,8 @@ label[for=sign-up] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-flow: column;
+        flex-flow: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1189,8 +1191,14 @@ label[for=sign-up] {
   .footer__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .footer__studio {
     margin-top: 60;

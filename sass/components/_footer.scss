@@ -176,6 +176,7 @@ label[for="sign-up"] {
   .footer__sign-up {
     display: flex;
     flex-direction: column;
+    flex-flow: column;
     align-items: flex-start;
     margin: 0;
   }
@@ -183,7 +184,9 @@ label[for="sign-up"] {
 
 @media screen and (min-width: 1200px) {
   .footer__container {
-    flex-flow: row nowrap;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .footer__studio {
     margin-top: 60;
