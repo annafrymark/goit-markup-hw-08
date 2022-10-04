@@ -1,8 +1,17 @@
+.logo--footer-Web {
+  // margin:0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .logo--footer {
   color: $brand-color-third;
   margin-top: 60px;
   margin-bottom: 20px;
-  margin-right: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 .address {
   color: $brand-color-third;
@@ -17,14 +26,21 @@
 
   &__container {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    // justify-content: center;
+    // align-self: center;
+    // justify-content: flex-start;
+    // align-items: flex-start;
     padding-top: 0;
     padding-bottom: 0;
   }
   &__studio {
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &__list {
@@ -55,16 +71,17 @@
   &__header {
     font-weight: 700;
     text-transform: uppercase;
-    margin-left: 70px;
+    // margin-left: 70px;
     margin-bottom: 20px;
-    margin-top: 72px;
+    // margin-top: 72px;
+    margin-top: 60px;
     font-size: 14px;
     color: $brand-color-third;
   }
   &__social-icons {
     display: flex;
     gap: 10px;
-    margin-left: 70px;
+    // margin-left: 70px;
     padding: 0;
   }
   &__social-links {
@@ -102,7 +119,7 @@
       background-color: $brand-color-first;
       color: rgba(255, 255, 255, 0.6);
       min-width: 290px;
-      max-width: 358px;
+      max-width: 450px;
       width: calc(100vw - 30px);
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
@@ -130,13 +147,15 @@ label[for="sign-up"] {
   line-height: 1.14;
   text-transform: uppercase;
   color: $brand-color-third;
-  margin-top: 72px;
+  // margin-top: 72px;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 .btn--signup {
   margin-left: 12px;
-  margin-bottom: 94px;
-  margin-top: 0;
+  // margin-bottom: 94px;
+  margin-bottom: 60px;
+  margin-top: 20px;
   padding: 10px 24px 10px 42px;
   display: inline-flex;
   position: relative;
