@@ -3,6 +3,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .job-picture {
+    display: block;
+    margin-bottom: 94px;
+  }
+
   .section__header {
     color: $brand-color-first;
     font-size: 36px;

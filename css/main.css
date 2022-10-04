@@ -459,6 +459,8 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   .article__list {
     -webkit-box-orient: horizontal;
@@ -472,6 +474,10 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
+  .job-picture {
+    display: block;
+    margin-bottom: 94px;
+  }
   .section__header {
     color: #2f303a;
     font-size: 36px;
@@ -699,6 +705,7 @@ a {
     display: flex;
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
+    padding-bottom: 94px;
   }
 }
 .container--clients {
@@ -808,6 +815,7 @@ a {
   color: #212121;
   border-width: 0;
   height: 38px;
+  width: 114px;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
