@@ -15,30 +15,94 @@
   position: fixed;
   height: 100%;
   background-color: $brand-color-third;
-  transform: translateX(-150%) rotate(360deg) scale(0.01);
+  transform: translateX(-150%);
   transition: transform 1s;
   z-index: 1;
   top: 0;
   left: 0;
 }
 .is-open {
-  transform: translateX(0) rotate(0) scale(1);
+  transform: translateX(0);
 }
 .js-close-menu,
 .js-open-menu {
   cursor: pointer;
 }
 
-.js-close-menu{
+.js-open-menu {
+  position: relative;
+  top: 5px;
+}
+
+.js-close-menu {
   position: absolute;
   top: 15px;
   right: 24px;
   border-radius: 50px;
   border-color: transparent;
+  background-color: transparent;
   font-size: 30px;
 }
 
+.js-close-menu:hover {
+  color: $brand-color-second;
+}
 
+.js-menu {
+  &__icon {
+    fill: $brand-color-first;
+
+    &:hover {
+      fill: $brand-color-second;
+    }
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn--modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: $brand-color-third;
+  border: none;
+  // border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  padding: 11px;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+// .js-menu-container.is-open {
+//   transform: translateX(0);
+// }
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  .js-menu-container {
+    display: none;
+  }
+}
 
 // .menu .link:hover,
 // .menu .link:focus {

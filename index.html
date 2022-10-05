@@ -23,7 +23,14 @@
           >Web<span class="logo logo--header">Studio</span></a
         >
 
-        <!-- <button type="button" class="js-open-menu">
+        <!-- mobile-menu -->
+
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20">
             <use
               href="./images/icons.svg#icon-menu_24px"
@@ -31,7 +38,66 @@
               height="20"
             ></use>
           </svg>
-        </button> -->
+        </button>
+
+        <div class="js-menu-container id="mobile-menu"">
+          <button
+            type="button"
+            class="menu-toggle js-close-menu close-btn close-btn--modal"
+          >
+            <svg fill="currentColor" viewBox="0 0 20 20" width="24" height="24">
+              <use
+                href="./images/icons.svg#icon-close"
+                width="20"
+                height="20"
+              ></use>
+            </svg>
+          </button>
+
+          <div>
+            <ul class="mobile-menu menu-pages">
+              <li>
+                <a href="./index.html" class="menu-pages__link">Agencja</a>
+              </li>
+              <li>
+                <a href="./portfolio.html" class="menu-pages__link"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="./Kontakt.html" class="menu-pages__link">Kontakt</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu menu-contact">
+              <li>
+                <a class="menu-contact__phone" href="tel:+48111111111">
+                  +48 111 111 111</a
+                >
+              </li>
+              <li>
+                <a class="menu-contact__email" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-menu menu-social">
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">Instagram</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">Twitter</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">Facebook</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <nav class="navigation">
           <ul class="navigation__list">
@@ -176,8 +242,8 @@
         <ul class="picture_list">
           <li class="picture">
             <img
-              src="images/1-programer-and-desk.jpg"
-              srcset="images/1-programer-and-desk@2x.jpg"
+              src="images/1-programer-and-desk.jpg 1x"
+              srcset="images/1-programer-and-desk@2x.jpg 2x"
               alt="Close up image programer working and his desk office"
               width="370"
               height="294"
@@ -186,8 +252,8 @@
           </li>
           <li class="picture">
             <img
-              src="images/2-interface-mobile-phones.jpg"
-              srcset="images/2-interface-mobile-phones@2x.jpg"
+              src="images/2-interface-mobile-phones.jpg 1x"
+              srcset="images/2-interface-mobile-phones@2x.jpg 2x"
               alt="Web UI designers are developing application"
               width="370"
               height="294"
@@ -196,8 +262,8 @@
           </li>
           <li class="picture">
             <img
-              src="images/3-web-design.jpg"
-              srcset="images/3-web-design@2x.jpg"
+              src="images/3-web-design.jpg 1x"
+              srcset="images/3-web-design@2x.jpg 2x"
               alt="Creative artist web design with working colour selectios graphic tablet"
               width="370"
               height="294"
@@ -209,14 +275,14 @@
 
       <section class="team">
         <div class="container">
-          <h2 class="section__header  section__header--team">Nasz zespół</h2>
+          <h2 class="section__header section__header--team">Nasz zespół</h2>
           <ul class="team__list">
             <li class="team__item">
               <figure class="team__member">
                 <img
                   class="team__photo"
-                  src="images/4-Product-Designer.jpg"
-                  srcset="images/4-Product-Designer@2x.jpg"
+                  src="images/4-Product-Designer.jpg 1x"
+                  srcset="images/4-Product-Designer@2x.jpg 2x"
                   alt="John Doe Product Designer"
                   width="270"
                   height="260"
@@ -293,8 +359,8 @@
               <figure class="team__member">
                 <img
                   class="team__photo"
-                  src="images/5-Frontend-Developer.jpg"
-                  srcset="images/5-Frontend-Developer@2x.jpg"
+                  src="images/5-Frontend-Developer.jpg 1x"
+                  srcset="images/5-Frontend-Developer@2x.jpg 2x"
                   alt="John Doe Frontend Developer"
                   width="270"
                   height="260"
@@ -371,8 +437,8 @@
               <figure class="team__member">
                 <img
                   class="team__photo"
-                  src="images/6-Marketing.jpg"
-                  srcset="images/6-Marketing@2x.jpg"
+                  src="images/6-Marketing.jpg 1x"
+                  srcset="images/6-Marketing@2x.jpg 2x"
                   alt="John Doe Marketing"
                   width="270"
                   height="260"
@@ -449,8 +515,8 @@
               <figure class="team__member">
                 <img
                   class="team__photo"
-                  src="images/7-UI-Designer.jpg"
-                  srcset="images/7-UI-Designer@2x.jpg"
+                  src="images/7-UI-Designer.jpg 1x"
+                  srcset="images/7-UI-Designer@2x.jpg 2x"
                   alt="John Doe UI-Designer"
                   width="270"
                   height="260"
@@ -752,66 +818,14 @@
       </div>
     </div>
 
-    <!-- mobile-menu -->
-
-    <div class="js-menu-container">
-      <button type="button" class="js-close-menu">X
-        
-        <!-- <svg fill="currentColor" viewBox="0 0 20 20" width="24" height="24">
-          <use
-            href="./images/icons.svg#icon-close_24px"
-            width="20"
-            height="20"
-          ></use>
-        </svg> -->
-      </button>
-
-      <div>
-        <ul class="mobile-menu menu-pages">
-          <li><a href="./index.html" class="menu-pages__link">Agencja</a></li>
-          <li>
-            <a href="./portfolio.html" class="menu-pages__link">Portfolio</a>
-          </li>
-          <li><a href="./Kontakt.html" class="menu-pages__link">Kontakt</a></li>
-        </ul>
-
-        <ul class="mobile-menu menu-contact">
-          <li>
-            <a class="menu-contact__phone" href="tel:+48111111111">
-              +48 111 111 111</a
-            >
-          </li>
-          <li>
-            <a class="menu-contact__email" href="mailto:info@devstudio.com">
-              info@devstudio.com</a
-            >
-          </li>
-        </ul>
-
-        <ul class="mobile-menu menu-social">
-          <li class="menu-social__item">
-            <a class="menu-social__link" href="">Instagram</a>
-          </li>
-          <li class="menu-social__item">
-            <a class="menu-social__link" href="">Twitter</a>
-          </li>
-          <li class="menu-social__item">
-            <a class="menu-social__link" href="">Facebook</a>
-          </li>
-          <li class="menu-social__item">
-            <a class="menu-social__link" href="">LinkedIn</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
