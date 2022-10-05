@@ -19,7 +19,7 @@ a {
   .navigation {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    // margin-left: auto;
     &__list {
       display: flex;
       flex-direction: row;
@@ -34,7 +34,7 @@ a {
       color: #212121;
       display: flex;
       flex-direction: row;
-      margin-right: 46px;
+      margin-right: 60px;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-property: color;
@@ -62,7 +62,12 @@ a {
   }
 }
 
-// @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .navigation__link {
+    margin-right: 46px;
+  }
+}
+
 //   .mobile-menu {
 //     display: none;
 //   }

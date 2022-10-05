@@ -14,9 +14,12 @@
   width: 100%;
   position: fixed;
   height: 100%;
-  background-color: teal;
+  background-color: $brand-color-third;
   transform: translateX(-150%) rotate(360deg) scale(0.01);
   transition: transform 1s;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 .is-open {
   transform: translateX(0) rotate(0) scale(1);
@@ -25,6 +28,17 @@
 .js-open-menu {
   cursor: pointer;
 }
+
+.js-close-menu{
+  position: absolute;
+  top: 15px;
+  right: 24px;
+  border-radius: 50px;
+  border-color: transparent;
+  font-size: 30px;
+}
+
+
 
 // .menu .link:hover,
 // .menu .link:focus {
