@@ -109,10 +109,12 @@
   .team__list {
     flex-wrap: wrap;
     gap: 30px;
+    flex-direction: row;
   }
   .team__item {
-    display: flex;
     flex-basis: calc((100% - 1 * 30px) / 2);
+    display: block;
+    padding: 0;
   }
 }
 
