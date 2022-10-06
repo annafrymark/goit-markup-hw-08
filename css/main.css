@@ -355,6 +355,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-left: 275px;
   }
   .contact__list {
     display: -webkit-box;
