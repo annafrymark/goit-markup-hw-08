@@ -73,9 +73,11 @@
   .article__list {
     gap: 30px;
     flex-wrap: wrap;
+    flex-direction: row;
   }
   .article__item {
     flex-basis: calc((100% - 1 * 30px) / 2);
+    display: block;
   }
 }
 
