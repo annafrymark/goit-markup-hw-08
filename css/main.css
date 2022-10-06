@@ -23,7 +23,7 @@ img {
 
 .container {
   width: 100%;
-  min-width: 340px;
+  min-width: 320px;
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -161,16 +161,20 @@ ul {
           flex-direction: column;
 }
 
-.menu-toggle {
+.close-btn--modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 11px;
+}
+
+.menu-toggle {
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -178,6 +182,7 @@ ul {
   border: none;
   border-radius: 50%;
   outline: none;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
