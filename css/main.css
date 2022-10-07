@@ -37,7 +37,7 @@ img {
   color: #2196f3;
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-right: 276px;
+  margin-right: auto;
   margin-left: 0px;
 }
 
@@ -1571,7 +1571,7 @@ label[for=sign-up] {
   fill: #ffffff;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: background-color, border;
@@ -1583,8 +1583,9 @@ label[for=sign-up] {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 100%;
-  min-height: 581px;
+  width: 100%;
+  max-width: 450px;
+  max-height: 609px;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
@@ -1612,6 +1613,21 @@ label[for=sign-up] {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
+}
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .modal__header {
   font-family: Roboto;
@@ -1645,7 +1661,8 @@ label[for=sign-up] {
   fill: #2196f3;
 }
 .modal__input {
-  width: 448px;
+  width: 100%;
+  max-width: 448px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1661,7 +1678,8 @@ label[for=sign-up] {
   border-color: #2196f3;
 }
 .modal__textarea {
-  width: 448px;
+  width: 100%;
+  max-width: 448px;
   height: 120px;
   resize: none;
   border-radius: 4px;
@@ -1704,7 +1722,7 @@ label[for=sign-up] {
 }
 .modal__statement {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
 }
 .modal__statement > a {
   color: #2196f3;
@@ -1729,14 +1747,8 @@ label[for=sign-up] {
           justify-content: center;
   position: relative;
   margin-top: 10px;
+  margin-bottom: 30px;
   cursor: pointer;
-}
-.modal__policy-text > svg {
-  position: absolute;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  bottom: 15px;
-  left: 12px;
 }
 .modal__policy:checked + .accept__icon {
   background-color: #2196f3;
@@ -1747,13 +1759,24 @@ label[for=sign-up] {
 .btn--modal {
   padding: 10px 76px;
   margin-bottom: 40px;
-  margin-left: 124px;
-  margin-right: 124px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 30;
+  margin: 0 auto;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__statement {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }/*# sourceMappingURL=main.css.map */

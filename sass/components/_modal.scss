@@ -34,7 +34,7 @@
   fill: $brand-color-third;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, border;
   padding: 4px 2px 3px 3px;
@@ -43,10 +43,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  // width: 528px;
-  // width: 450px;
-  max-width: 100%;
-  min-height: 581px;
+  width: 100%;
+  max-width: 450px;
+  max-height: 609px;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $brand-color-third;
@@ -58,15 +57,24 @@
   opacity: 1;
   visibility: visible;
   display: block;
-  
 
   &__container {
     padding: 40px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    
+    // width: 100%;
+    // max-width: 450px;
+    // max-height: 609px;
   }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__header {
     font-family: Roboto;
     font-weight: 700;
@@ -101,7 +109,8 @@
   }
 
   &__input {
-    width: 448px;
+    width: 100%;
+    max-width: 448px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -117,7 +126,8 @@
     }
   }
   &__textarea {
-    width: 448px;
+    width: 100%;
+    max-width: 448px;
     height: 120px;
     resize: none;
     border-radius: 4px;
@@ -151,8 +161,9 @@
 
   &__statement {
     font-weight: 400;
-    font-size: 14px;
-
+    font-size: 12px;
+    // margin-left: auto;
+    
     & > a {
       color: $brand-color-second;
       text-decoration: underline;
@@ -171,14 +182,9 @@
       justify-content: center;
       position: relative;
       margin-top: 10px;
+      margin-bottom: 30px;
       cursor: pointer;
-
-      & > svg {
-        position: absolute;
-        transform: translateY(50%);
-        bottom: 15px;
-        left: 12px;
-      }
+       
     }
 
     &:checked + .accept__icon {
@@ -186,15 +192,29 @@
       border: $brand-color-second;
       fill: $brand-color-third;
     }
-  }}
-
-  .btn--modal {
-    padding: 10px 76px;
-    margin-bottom: 40px;
-    margin-left: 124px;
-    margin-right: 124px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30;
   }
+}
 
+.btn--modal {
+  padding: 10px 76px;
+  margin-bottom: 40px;
+
+  justify-content: center;
+  align-items: center;
+ 
+  margin: 0 auto;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__statement {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}

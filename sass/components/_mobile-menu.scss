@@ -13,9 +13,11 @@
   z-index: 1;
   top: 0;
   left: 0;
+  // visibility: hidden;
 }
 .is-open {
   transform: translateX(0);
+  // visibility: visible;
 }
 .js-close-menu,
 .js-open-menu {
@@ -114,7 +116,7 @@
   }
 }
 
-.menu-contact{
+.menu-contact {
   margin-bottom: 32px;
 }
 .menu-contact__phone {
