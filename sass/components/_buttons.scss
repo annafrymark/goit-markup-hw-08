@@ -6,7 +6,7 @@
 .buttons {
   padding-bottom: 0;
   align-items: center;
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   // flex-direction: row;
   gap: 8px;
@@ -20,7 +20,8 @@
   color: #212121;
   border-width: 0;
   height: 38px;
-  width: 114px;
+  max-width: 145px;
+  width: auto;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
@@ -49,14 +50,21 @@
 }
 
 @media screen and (min-width: 768px) {
+  .buttons {
+   justify-content: center;}
+   
   .btn--filters {
     display: flex;
     flex-basis: calc((100% - 4 * 8px) / 5);
+    // max-width: 145px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .buttons-container {
     padding-top: 94px;
+  }
+  .btn--filters {
+    max-width: 121px;
   }
 }

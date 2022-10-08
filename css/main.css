@@ -1069,7 +1069,8 @@ a {
   color: #212121;
   border-width: 0;
   height: 38px;
-  width: 114px;
+  max-width: 145px;
+  width: auto;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
@@ -1104,6 +1105,11 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .btn--filters {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1115,6 +1121,9 @@ a {
 @media screen and (min-width: 1200px) {
   .buttons-container {
     padding-top: 94px;
+  }
+  .btn--filters {
+    max-width: 121px;
   }
 }
 img {
