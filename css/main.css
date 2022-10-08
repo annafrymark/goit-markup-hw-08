@@ -1433,7 +1433,6 @@ img {
 .footer__email-input {
   padding-left: 15px;
   margin: 0;
-  max-width: 450px;
 }
 
 .social-icon--footer {
@@ -1492,6 +1491,7 @@ label[for=sign-up] {
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1500,8 +1500,15 @@ label[for=sign-up] {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
   }
-  .footer__studio {
+  .footer__container__studio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1509,13 +1516,18 @@ label[for=sign-up] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 0;
+    margin-top: 60px;
   }
   .logo--footer-Web {
     margin-left: 0;
   }
   .footer__list {
     text-align: left;
+  }
+  .footer__join-us {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .footer__header {
     margin-left: 70px;
@@ -1525,18 +1537,12 @@ label[for=sign-up] {
     margin-left: 70px;
   }
   .footer__sign-up {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 77px;
+    margin-left: 78px;
     margin-top: 12px;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1545,16 +1551,15 @@ label[for=sign-up] {
     display: block;
     margin-bottom: 20px;
     text-align: left;
+    margin-left: 78px;
   }
-  .footer__email-input {
+  .footer__sign-up input {
     max-width: 358px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
   }
   .btn--signup {
     margin-bottom: 94px;
     margin-top: 0;
+    margin-left: 12px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
