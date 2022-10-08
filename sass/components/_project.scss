@@ -26,8 +26,6 @@ img {
 
   &__container {
     position: relative;
-    width: 370px;
-    height: 294px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,6 +78,9 @@ img {
     margin: 0;
   }
   &__item {
+    width: 100%;
+     max-width: 450px;
+    max-height: 404px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: box-shadow;
@@ -94,24 +95,26 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project__list{
+  .project__list {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
-  .project__item > figure {
+
+  .project__item {
     flex-basis: calc((100% - 1 * 30px) / 2);
-    display: block;
+    max-width: 354px;
+    // display: block;
   }
 }
 
 @media screen and (min-width: 1200px) {
-   .project__list{
+  .project__list {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .project__item > figure {
+  .project__item {
     flex-basis: calc((100% - 2 * 30px) / 3);
     display: block;
+    max-width: 370px;
   }
 }

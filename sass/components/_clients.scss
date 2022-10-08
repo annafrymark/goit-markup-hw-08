@@ -1,39 +1,30 @@
 .container--clients {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 }
 
-.section__header--clients{
+.section__header--clients {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
-  }
+}
 
 .clients {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  
+  justify-content: center;
+  width: 100%;
 
-  &__logo {
-    border: solid 1px #afb1b8;
-    border-radius: 4px;
-    fill: #afb1b8;
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px 16px 32px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill, border-color;
-  }
   &__item {
     display: flex;
-     flex-basis: calc((100% - 1 * 30px) / 2);
-     width: 210px;
-     height: 92px;
-     margin: 0;
-     padding: 0;
-     
+    // flex-direction: row;
+    flex-wrap: wrap;
+    // flex-basis: calc((100% - 1 * 30px) / 2);
+    margin: 0;
+    padding: 0;
+
     // align-items: center;
     // justify-content: center;
 
@@ -47,19 +38,50 @@
     &:hover .clients__logo {
       fill: $brand-color-second;
     }
+    // & > .clients__item--link {
+    //   display: flex;
+    //   flex-direction: row;
+    //   flex-wrap: wrap;
+    // }
+  }
+
+  &__logo {
+    border: solid 1px #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    width: 100%;
+    max-width: 210px;
+    max-height: 92px;
+    padding: 16px 32px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, border-color;
+    display: block;
+    flex-basis: calc((100% - 1 * 30px) / 2);
+    // display: block;
+    gap: 30px;
+    margin: 0;
+   
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients__item {
-     flex-basis: calc((100% - 2 * 30px) / 3);}
+  .clients__logo {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    max-width: 226px;
+    max-height: 92px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .clients {
-    display: flex;
-    flex-direction: row;
+  // .clients {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
+  .clients__logo {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+    max-width: 170px;
+    max-height: 92px;
+    // flex-direction: row;
   }
-  .clients__item {
-     flex-basis: calc((100% - 5 * 30px) / 6);}
 }
