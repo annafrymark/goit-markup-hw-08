@@ -79,6 +79,14 @@
     flex-basis: calc((100% - 1 * 30px) / 2);
     display: block;
   }
+  .article__title {
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .article__text {
+    text-align: left;
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -89,6 +97,10 @@
   }
   .article__list {
     flex-direction: row;
+  }
+  .article__title {
+    text-align: left;
+    justify-content: flex-start;
   }
 }
 
