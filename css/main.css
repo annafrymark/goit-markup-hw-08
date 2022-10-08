@@ -1432,8 +1432,9 @@ img {
   margin: 0 auto;
 }
 .footer__email-input {
-  padding-left: 16px;
+  padding-left: 15px;
   margin: 0;
+  max-width: 450px;
 }
 
 .social-icon--footer {
@@ -1488,11 +1489,9 @@ label[for=sign-up] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-flow: column;
-        flex-flow: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
   }
 }
@@ -1500,17 +1499,10 @@ label[for=sign-up] {
   .footer__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .footer__studio {
-    margin-top: 60;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1518,12 +1510,10 @@ label[for=sign-up] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    margin-top: 0;
+  }
+  .footer__list {
+    text-align: left;
   }
   .footer__header {
     margin-left: 70px;
@@ -1536,22 +1526,36 @@ label[for=sign-up] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    margin-left: 77px;
+    margin-top: 12px;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .label[for=sign-up] {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 72px;
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
   }
   .footer__email-input {
     max-width: 358px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   .btn--signup {
     margin-bottom: 94px;
+    margin-top: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 /* BACKDROP */

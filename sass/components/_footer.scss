@@ -130,8 +130,9 @@
   }
 
   &__email-input {
-    padding-left: 16px;
+    padding-left: 15px;
     margin: 0;
+    max-width: 450px;
   }
 }
 
@@ -176,26 +177,25 @@ label[for="sign-up"] {
   .footer__sign-up {
     display: flex;
     flex-direction: column;
-    flex-flow: column;
-    align-items: flex-start;
+    // flex-flow: column;
+    align-items: center;
     margin: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__container {
-    flex-flow: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
   }
+
   .footer__studio {
-    margin-top: 60;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin-top: 0;
+  }
 
-    // color: aquamarine;
+  .footer__list {
+    text-align: left;
   }
 
   .footer__header {
@@ -209,18 +209,27 @@ label[for="sign-up"] {
 
   .footer__sign-up {
     display: flex;
-    flex-flow: row nowrap;
+    margin-left: 77px;
+    margin-top: 12px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // flex-flow: row nowrap;
   }
 
   .label[for="sign-up"] {
-    display: flex;
-    margin-top: 72px;
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
   }
-  .footer__email-input{
+  .footer__email-input {
     max-width: 358px;
+    display: inline-flex;
   }
 
   .btn--signup {
     margin-bottom: 94px;
+    margin-top: 0;
+    display: inline-flex;
   }
 }
